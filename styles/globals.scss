@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');
+
+html,
+body , *{
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Serif', serif;
+}
+
+:root {
+  --nc-header-shadow : rgba(60,64,67,0.3);
+  --color-primary-light : #2b7de9;
+  --color-secondary-light : white;
+}
+

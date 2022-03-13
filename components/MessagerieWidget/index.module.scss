@@ -1,0 +1,156 @@
+.messagerieWidget{
+    width: 100%;
+    height: inherit;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 15px;
+    min-width: 400px;
+    min-height: 400px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    .noRoom{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .rooms{
+        width: 50%;
+        padding: 1rem;
+        height: 400;
+        height: 400;
+        overflow: 'auto';
+        padding: '0 16px';
+        border: '1px solid rgba(140, 140, 140, 0.35)';
+    }
+    /* width */
+    .rooms::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+    /* Track */
+    .rooms::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey; 
+        border-radius: 10px;
+    }
+    
+    /* Handle */
+    .rooms::-webkit-scrollbar-thumb {
+        background: var(--blue); 
+        border-radius: 4px;
+    }
+    
+    /* Handle on hover */
+    .rooms::-webkit-scrollbar-thumb:hover {
+        background: var(--blue); 
+    }
+  
+
+    .search{
+        margin-top: .2rem;
+        margin-bottom: .2rem;
+    }
+    .messagerie{
+        width: 50%;
+        min-width: 300px;
+        height: 100%;
+        background-color: #fff;
+        margin-bottom: 1em;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        border-left: 1px solid var(--color-primary-light);
+        .top{
+            background-color: var(--color-primary-light);
+            height: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 0 1rem 0;
+            align-items: center;
+            color: var(--color-secondary-light);
+            font-size: 1.5em;
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                .name{
+                    font-size: .9rem;
+                    margin-left: .4rem;
+                }
+            }
+        }
+        .content{
+            height: 100%;
+            padding: 1rem;
+            padding-right: 0;
+            display: flex;
+            flex-direction: column;
+            max-height: 100%;
+            overflow-y: scroll;
+            .msgUser2{
+                width: 100%;
+                display: flex;
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+                .txt{
+                    padding: .25rem;
+                    border-bottom-left-radius: .25rem;
+                    border-bottom-right-radius: .25rem;
+                    border-top-left-radius: .25rem;
+                    width: max-content;
+                    background-color: #ccc;
+                }
+            }
+            .msgUser1{
+                background-color: var(--color-primary-light);
+                width: max-content;
+                padding: .25rem;
+                border-bottom-left-radius: .25rem;
+                border-bottom-right-radius: .25rem;
+                border-top-right-radius: .25rem;
+    
+                display: flex;
+                align-items: center;
+                color: var(--color-secondary-light);
+            }
+        }
+        .smsZone{
+            width: 100%;
+            height: 60px;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            .input{
+                max-height: 50px;
+                border-radius: 5px;
+                width: 85%;
+                overflow: hidden;
+                padding: 2px;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding: 5px;
+            }
+            .send{
+                background-color: var(--color-primary-light);
+                color: var(--color-secondary-light);
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                margin-left: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+        }
+    }
+
+}

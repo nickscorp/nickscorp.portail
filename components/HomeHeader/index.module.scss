@@ -1,0 +1,73 @@
+//App.css or App.scss file
+.header {
+    //...the rest is at the source code
+    position: fixed;
+    box-shadow: none;
+    border: none;
+    z-index: 10;
+    transition: box-shadow 250ms ease-in-out;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    height: max-content;
+    padding: .5rem 1rem .5rem 1rem;
+    width:  100%;
+
+   
+    .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .select,.select *{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            border: none;
+            max-height: 15px !important;
+            img{
+                width: 10px;
+                height: 10px;
+            } 
+            .option{
+                max-height: 10px !important;
+            }
+        }
+        svg{
+            width: 18px;
+            cursor: pointer;
+        }
+        .connexion{
+            margin-left: 2em;
+            background-color: var(--color-primary-light) ;
+            color: var(--color-secondary-light) ;
+            font-size: 14px;
+            padding: 6px 12px;
+            border-radius: 0.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin-right: .5rem;
+        }
+    }
+}
+
+
+.stickyHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width:  calc( 100% - 1rem );
+    background: #fff;
+    box-shadow: 0 2px 8px #f0f1f2;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 1rem 0 1rem;
+}
+  
